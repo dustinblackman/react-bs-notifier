@@ -17,6 +17,7 @@
   "scripts": {
     "build": "babel alerts.jsx > alerts.js",
     "test": "jshint . --exclude node_modules",
+    "postinstall": "npm run build",
     "prepublish": "npm run build && npm run test"
   },
   "repository": {
@@ -36,10 +37,10 @@
   },
   "peerDependencies": {
     "react": ">=0.14",
+    "babel": "^5.6.23",
     "react-addons-css-transition-group": ">=0.14"
   },
   "devDependencies": {
-    "babel": "^5.6.23",
     "jshint": "^2.7.0"
   }
 }
