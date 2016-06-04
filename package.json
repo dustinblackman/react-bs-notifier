@@ -17,7 +17,6 @@
   "scripts": {
     "build": "babel alerts.jsx > alerts.js",
     "test": "jshint . --exclude node_modules",
-    "postinstall": "npm run build",
     "prepublish": "npm run build && npm run test"
   },
   "repository": {
